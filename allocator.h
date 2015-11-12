@@ -8,6 +8,8 @@ class allocator {
 	public:
 		allocator() { }
 
+		virtual ~allocator() { }
+
 		virtual bool allocate(const taskset& ts, allocation& al)=0;
 };
 

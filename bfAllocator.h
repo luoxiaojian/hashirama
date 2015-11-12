@@ -7,7 +7,7 @@
 class bfAllocator : public allocator {
 	public:
 		bfAllocator() { }
-		~bfAllocator() { }
+		virtual ~bfAllocator() { }
 
 		bool allocate(const taskset& ts, allocation& al);
 };
